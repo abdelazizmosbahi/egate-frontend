@@ -1,0 +1,122 @@
+<html>
+    <body style="background-image: url(https://i.ibb.co/yPfbH9h/education-and-business-background-1.jpg); background-repeat: no-repeat;
+    background-size: cover; ">
+<section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-5">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <div class="login-wrap p-4 p-md-5" style="background-color: white; padding-left: 50px;">
+            <div class="d-flex">
+              <div class="w-100">
+                <h3 class="mb-4">SIGN UP</h3>
+              </div>
+
+            </div>
+            
+            <form class="signin-form"  [formGroup]="registerForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="label" for="firstname">First name</label>
+                      <input type="text" class="form-control" name="firstname" formControlName="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="label" for="lastname">Last name</label>
+                      <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name" required>
+                    </div>
+                  </div>
+                  
+            
+                  <div class="form-row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="label" for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" formControlName="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                      <label class="label" for="lastname">Username</label>
+                    <input type="text" class="form-control" formControlName="username" placeholder="Username" required>
+                  </div>
+                  </div>
+
+                  <div class="form-row">
+                  <!-- <div class="form-group col-md-6 mb-3">
+                  <label class="label" for="phone">Phone Number</label>
+                <input type="number" class="form-control" formControlName="phone" placeholder="Your Phone number" required>
+              </div>     -->
+              <div class="form-group col-md-6 mb-3">
+                <label class="label" for="phone">Phone Number</label>
+                <input type="text" class="form-control" formControlName="phone" maxlength="8" minlength="8" placeholder="Your Phone number" pattern="[0-9]{8}" required>
+              </div>
+                
+              <div  class="form-group col-md-6 mb-3">
+                  <label for="role" class="label">Signup as:</label>
+                  <select id="role"  name="role" class="form-control" required formControlName="role">
+                    <option value="TEACHER">TEACHER</option>
+                    <option value="STUDENT">STUDENT</option>
+                  </select>
+                </div>    
+                 
+                </div>
+
+                <div class="form-row">
+                  <div  class="form-group col-md-6 mb-3">
+                    <label for="date-of-birth" class="label">Date Of Birth:</label>
+                    <input type="date" class="form-control" formControlName="dateofbirth" required>
+                  </div> 
+                  <div  class="form-group col-md-6 mb-3">
+                    <label for="gender" class="label">Gender</label>
+                    <select id="gender"  name="gender" class="form-control" required formControlName="gender">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>    
+                </div>
+                
+              
+              <div class="form-group row">
+                <div class="col">
+                  <label for="password" class="label">Password</label>
+                  <input type="password" formControlName="password" class="form-control" id="password" placeholder="Type a strong password ," required>
+                  <!-- <div *ngIf="password.touched && password.invalid">
+                    <small *ngIf="password.errors.required" class="text-danger">Password is required</small>
+                    <small *ngIf="password.errors.minlength" class="text-danger">Password must contain at least 8 caracters</small>
+                  </div> -->
+                </div>
+             
+              </div>
+              <div class="form-checkbox">
+                <label class="container" style="display: inline-block; ">
+                  <input type="checkbox" name="checkbox" style="display: inline-block; ">
+                  <p style="display: inline-block;  margin-left: 20px;">I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary rounded submit px-3" (click)="createUser()">SIGN UP</button> <br><br>
+    <div class="alert alert-success" role="alert" *ngIf="showSuccessAlert">
+      Registration successful!
+    </div>
+    <div *ngIf="registerForm.get('phone')?.invalid && (registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched)" class="text-danger" class="alert alert-danger" role="alert">
+     
+      <div *ngIf="registerForm.get('phone')?.errors?.['pattern']"></div>
+      Please enter a valid 8-digit phone number.    </div>
+  `
+              </div>
+
+
+              
+              
+            </form>
+            <p class="text-center">Already have an account? <a data-toggle="tab" routerLink="/login">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   
+    
+    </body></html>

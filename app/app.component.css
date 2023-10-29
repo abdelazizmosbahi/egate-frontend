@@ -1,0 +1,94 @@
+.bg-banner {
+    background-image: url('https://i.ibb.co/sjbnSZ7/smiling-black-girl-with-headset-studying-online-using-laptop-640x427.jpg');
+    background-size: cover;
+    border-radius: 0%;
+    max-height: 350px;
+    position: relative;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+}
+
+.color-grad {
+    background: linear-gradient(to left, #ec5252, #6e1a52);
+    top: 50%;
+    left: 50%;
+}
+
+.badge-style {
+    position: absolute;
+    z-index: 0;
+    margin-top: 10px;
+}
+
+.rounded-radius-right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.rounded-radius-left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.badge-radius {
+    border-radius: 0px 50% 50% 0px;
+}
+.bg-banner {
+
+    background-size: 100%;
+    border-radius: 0%;
+    /* background-repeat: no-repeat; */
+}
+
+.color-grad {
+    background: linear-gradient(to left, #ec5252, #6e1a52);
+}
+
+.badge-style {
+    position: absolute;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.rounded-radius-right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.rounded-radius-left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.badge-radius {
+    border-radius: 0px 50% 50% 0px;
+}
+.login {
+    height: 50px;
+    background-color: black;
+    border: white;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .signup {
+    height: 50px;
+    background-color: grey;
+    border: black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .figure-img{
+    border-radius: 50%;
+  }
